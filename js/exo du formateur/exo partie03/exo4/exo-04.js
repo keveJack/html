@@ -5,7 +5,7 @@ let tentative=1
 let min=1;
 let max=5;
 let random= parseInt((Math.random()*(max-min)).toFixed(0))+min;
-alert(random);
+
 while ((random!=reponse) && (tentative<3)){
     if (reponse<random) {
          reponse=parseInt(prompt("Le nombre est plus grand"));

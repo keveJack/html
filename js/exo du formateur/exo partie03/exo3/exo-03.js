@@ -3,8 +3,8 @@ let texte="<ul>";
 let nombre=prompt("Ecrire un nombre");
 
 if (nombre<11) {
-    for (let i = 1; i < nombre; i++) {
-      for (let j = 1; j < i;j++ ) {
+    for (let i = 0; i < nombre; i++) {
+      for (let j = 0; j < i;j++ ) {
         texte += "*"; 
       }
       texte += `</br>`;
