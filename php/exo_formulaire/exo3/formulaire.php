@@ -8,6 +8,9 @@
 </head>
 
 <body>
+    <h1>
+        Entrez les nombres
+    </h1>
     <form action="resultat.php" method="post">
         <p>
         <input type="number" name="numero1" id="numero1" class="form-control" placeholder="Ecrire votre numero ">
