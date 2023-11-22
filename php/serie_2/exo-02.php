@@ -8,10 +8,11 @@ $moyenne = $somme / count($tableauNombre);
 echo "moyenne = " . $moyenne ;
 echo "\n";
 foreach ($tableauNombre as $key => $value) {
-    $difValeur = abs($tableauNombre[$value]-$moyenne);
+    $difValeur = abs($value-$moyenne);
     $tableauDifValeur[] = $difValeur;
     
 }
-$difValeurMoy = (array_sum($tableauDifValeur)/count($tableauDifValeur));
-echo "Ecarttype(tableauNombre)= $difValeur"
+
+$ecartType = (array_sum($tableauDifValeur)/count($tableauDifValeur));
+echo "Ecarttype(tableauNombre)= $ecartType";
 ?>

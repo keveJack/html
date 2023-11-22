@@ -1,0 +1,10 @@
+.img_logo
+ {
+    max-width: 100%;
+ }
+ .image_laterale
+ {
+    max-height: 35vh;
+    overflow: hidden;
+   
+ }
