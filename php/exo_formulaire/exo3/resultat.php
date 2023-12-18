@@ -1,17 +1,32 @@
+<?php
+$nombre=$_POST['nombreA'];
+if ($_POST['nombreB']<$_POST['nombreC'])
+    {
+        $nombreInf=$_POST['nombreB'];
+        $nombreSup =$_POST['nombreC'];
+    }
+    else
+    {
+        $nombreInf=$_POST['nombreC'];
+        $nombreSup =$_POST['nombreB'];
+    }
+
+if (($nombre>$nombreInf)&&($_POST['nombreA']<$nombreSup))
+$resultat ="Oui, ".$nombre." est compris entre ".$nombreInf." et ".$nombreSup.".";
+else
+$resultat ="Non, ".$nombre." n'est pas compris entre ".$nombreInf." et ".$nombreSup.".";
+?>
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        Résultat du test
-    </h1>
-    <p>
-    <?=$_POST["numero1"]?> est-il compris entre <?=$_POST["numero2"]?> et <?=$_POST["numero3"]?> ?
-    Oui, <?=$_POST["numero1"]?> est compris entre <?=$_POST["numero2"]?> et <?=$_POST["numero3"]?>.
-    </p>
+
+<h1>Résultat du test </h1>
+<p><?=$nombre?> est-t-il compris entre <?=$nombreInf?> et <?=$nombreSup?></p>
+<p><?=$resultat?></p>
 </body>
 </html>
